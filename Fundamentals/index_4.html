@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        const arr1 = ["svi", "su" , "istog", "tipa"];
+        arr1[0] = 100;
+        console.log(arr1);
+        arr1[5] = 300;
+        for (let k= 0; k<arr1.length;k++){
+            document.write("Element is: " + arr1[k] + " ||  type: " + typeof (arr1[k]) + "<br/>");
+        }
+
+        // arr1 = new Array(23, true , 0 , false, "kako si");
+        // for (let k= 0; k<arr1.length;k++){
+        //     document.write("Element is: " + arr1[k] + " ||  type: " + typeof (arr1[k]) + "<br/>");
+        // }
+        document.write("<hr><br/>")
+        arr1.forEach(function (element, idx, arr1){
+            document.write(element + " index position: " + idx + " lenght of an arr: " + arr1.length)
+            document.write("<br/>")
+        });
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
